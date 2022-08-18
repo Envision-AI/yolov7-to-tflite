@@ -5,12 +5,11 @@ This repo is for converting yolov7 onnx exported model into TFlite.
 
 On the yolov7 repo export your model to onnx by using:
 
-
+``` shell
 python3 export.py --weights best.pt --grid --end2end --simplify --topk-all 100 --conf-thres 0.35 --img-size 320 320 --max-wh 320
+```
 
-
-
-Afterwards use export.py on this repo to convert your model to TFlite
+Afterwards use export.py on this repo to convert your onnx model to TFlite
 
 # Colab Walkthrough Tutorial
 
